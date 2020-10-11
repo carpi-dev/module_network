@@ -4,9 +4,9 @@
 #include "ui_network.h"
 #endif
 
-Network::Network(QWidget *parent): QWidget(parent),
+Network::Network(QWidget *parent): QWidget(parent)
 #ifdef NETWORK_LOADABLE
-ui(new Ui::Network)
+,ui(new Ui::Network)
 #endif
 {
 #ifdef NETWORK_LOADABLE
